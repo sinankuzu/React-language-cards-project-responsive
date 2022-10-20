@@ -1,8 +1,16 @@
 .container{
     width: 600px;
     height: 800px;
-    border: 1px solid red;
-    
+    background-color:rgb(244,139,41);
+    border-radius:20px;
+    margin-top: 30px;
+   
+}
+
+h1{
+    color: white;
+    padding-top: 20px;
+   
 }
 
 .grid-container{
@@ -13,13 +21,58 @@
 
 img{
     width: 100px;
+    
 
 }
 
 .card{
-    border: 1px solid red;
+    margin-top: 25px;
     width: 250px;
     height: 150px;
     border-radius:15px;
     background-color:rgb(252,236,221);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
 }
+
+.first-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(252,236,221);
+}
+
+p{
+    margin: 5px;
+}
+
+.second-page{
+    position: absolute;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color:rgb(252,236,221); 
+    opacity: 0;
+}
+
+.first-page-click{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(252,236,221);
+    opacity: 0;
+    
+    
+} 
+
+.second-page-show{
+    position: absolute;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color:rgb(252,236,221);
+    opacity: 1;
+}
+
