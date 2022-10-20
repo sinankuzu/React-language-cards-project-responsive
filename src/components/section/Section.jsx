@@ -6,16 +6,16 @@ const Section = ({myData}) => {
   return (
 
 
-    <div className="card">
+    <div className="container">
         <h1>Languages</h1>
-        <div className="my-card">
+        <div className="grid-container">
     
     
-        {myData.map(()=>{
+        {myData.map((eleman)=>{
             
               return (
-              <div className="info">
-                <img src={myData.img} alt="" />
+              <div className="card">
+                <img src={eleman.img} alt="" />
               </div>)
         })}
         

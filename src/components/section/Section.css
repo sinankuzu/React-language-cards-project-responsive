@@ -1,5 +1,25 @@
-.card{
+.container{
     width: 600px;
     height: 800px;
     border: 1px solid red;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+img{
+    width: 100px;
+
+}
+
+.card{
+    border: 1px solid red;
+    width: 250px;
+    height: 150px;
+    border-radius:15px;
+    background-color:rgb(252,236,221);
 }
