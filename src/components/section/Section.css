@@ -132,6 +132,7 @@ p {
   }
 }
 
+
 @media (max-width: 415px) {
   .container {
     width: 300px;
