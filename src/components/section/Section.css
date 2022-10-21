@@ -1,113 +1,103 @@
-.container{
-    width: 600px;
-    height: 800px;
-    background-color:rgb(244,139,41);
-    border-radius:20px;
-    margin-top: 30px;
-   
+.container {
+  width: 600px;
+  height: 800px;
+  background-color: rgb(244, 139, 41);
+  border-radius: 20px;
+  margin-top: 30px;
 }
 
-h1{
-    color: white;
-    padding-top: 20px;
-   
+h1 {
+  color: white;
+  padding-top: 20px;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
-img{
-    width: 100px;
-    
-
+img {
+  width: 80px;
+  margin: 10px 0;
 }
 
-.card{
-    margin-top: 25px;
-    width: 250px;
-    height: 150px;
-    border-radius:15px;
-    background-color:rgb(252,236,221);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    transform: rotateY(0deg);
-    transition: 1s;
-    
+.card {
+  margin-top: 25px;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: rgb(252, 236, 221);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  transform: rotateY(0deg);
+
+  transition: 1.7s;
 }
 
-.card-flip{
-    margin-top: 25px;
-    width: 250px;
-    height: 150px;
-    border-radius:15px;
-    background-color:rgb(252,236,221);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    transform: rotateY(360deg);
-    transition: 1s;
-    
+.card-flip {
+  margin-top: 25px;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: rgb(252, 236, 221);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+  transition: 1.7s;
 }
 
-.first-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color:rgb(252,236,221);
-    scale: 1;
-    z-index: 2;
-    transition: scale 1s, z-index 0s;
-
+.first-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(252, 236, 221);
+  scale: 1;
+  z-index: 2;
+  transition: scale 1s, z-index 0s;
+  transition-delay: 500ms;
 }
 
-p{
-    margin: 5px;
+p {
+  margin: 5px;
 }
 
-.second-page{
-    position: absolute;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    background-color:rgb(252,236,221); 
-    scale: 0;
-    z-index: 1;
-    opacity: 0;
-    transition: scale 1s, z-index 0s, opacity 0.5s;
-    
+.second-page {
+  position: absolute;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background-color: rgb(252, 236, 221);
+  scale: 0;
+  z-index: 1;
+  transition: scale 1s, z-index 0s;
 }
 
-.first-page-click{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color:rgb(252,236,221);
-    scale: 0;
-    z-index:1;
-    opacity: 0;
-    transition: scale 1s, z-index 0s, opacity 0.5s;
-    
-    
-    
-} 
+.first-page-click {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(252, 236, 221);
+  scale: 0;
+  z-index: 1;
 
-.second-page-click{
-    position: absolute;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(252,236,221);
-    scale: 1;
-    z-index:2;
-    transition: scale 1s, z-index 0s;
-    
-    
+  transition: scale 1s, z-index 0s;
 }
 
+.second-page-click {
+  position: absolute;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 236, 221);
+  scale: 1;
+  z-index: 2;
+  transition: scale 1s, z-index 0s;
+  transition-delay: 500ms;
+}
