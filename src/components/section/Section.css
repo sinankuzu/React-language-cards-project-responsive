@@ -37,6 +37,18 @@ img{
     align-items: center;
 }
 
+.card{
+    margin-top: 25px;
+    width: 250px;
+    height: 150px;
+    border-radius:15px;
+    background-color:rgb(252,236,221);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
 .first-page{
     display: flex;
     flex-direction: column;
@@ -67,10 +79,11 @@ p{
     
 } 
 
-.second-page-show{
+.second-page-click{
     position: absolute;
     text-align: left;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color:rgb(252,236,221);
     opacity: 1;

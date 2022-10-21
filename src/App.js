@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="main-container">
  <Header/>
- <Section myData={languages}/>
+ <Section languages = {languages}/>
 
     </div>
   );
