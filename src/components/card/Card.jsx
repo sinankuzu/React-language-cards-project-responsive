@@ -11,17 +11,25 @@ const Card = ({eleman}) => {
       if (style === "first-page") {
         // console.log("clicked");
         // e.target.style = "first-page-click";
-        setStyle("first-page-click");
-        setStyle2("second-page-click");
-        // setCardStyle("card-flip")
+        setCardStyle("card-flip");
+        
+            setStyle("first-page-click");
+            setStyle2("second-page-click");
+       
+        // setStyle("first-page-click");
+        // setStyle2("second-page-click");
+        
        
         
       } else if (style === "first-page-click") {
         // console.log("clicked again");
         // e.target.style = "first-page";
-         setStyle("first-page");
-        setStyle2("second-page");
-        //  setCardStyle("card");
+          setCardStyle("card");
+        
+          setStyle("first-page");
+          setStyle2("second-page");
+        
+        
       }
     };
 

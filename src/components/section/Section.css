@@ -35,9 +35,12 @@ img{
     justify-content: center;
     position: relative;
     align-items: center;
+    transform: rotateY(0deg);
+    transition: 1s;
+    
 }
 
-.card{
+.card-flip{
     margin-top: 25px;
     width: 250px;
     height: 150px;
@@ -47,6 +50,9 @@ img{
     justify-content: center;
     position: relative;
     align-items: center;
+    transform: rotateY(360deg);
+    transition: 1s;
+    
 }
 
 .first-page{
@@ -54,6 +60,10 @@ img{
     flex-direction: column;
     justify-content: center;
     background-color:rgb(252,236,221);
+    scale: 1;
+    z-index: 2;
+    transition: scale 1s, z-index 0s;
+
 }
 
 p{
@@ -66,7 +76,11 @@ p{
     display: flex;
     align-items: center;
     background-color:rgb(252,236,221); 
+    scale: 0;
+    z-index: 1;
     opacity: 0;
+    transition: scale 1s, z-index 0s, opacity 0.5s;
+    
 }
 
 .first-page-click{
@@ -74,7 +88,11 @@ p{
     flex-direction: column;
     justify-content: center;
     background-color:rgb(252,236,221);
+    scale: 0;
+    z-index:1;
     opacity: 0;
+    transition: scale 1s, z-index 0s, opacity 0.5s;
+    
     
     
 } 
@@ -86,6 +104,10 @@ p{
     justify-content: center;
     align-items: center;
     background-color:rgb(252,236,221);
-    opacity: 1;
+    scale: 1;
+    z-index:2;
+    transition: scale 1s, z-index 0s;
+    
+    
 }
 
