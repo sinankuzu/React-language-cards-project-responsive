@@ -2,10 +2,15 @@ import React, { useState } from "react";
 
 const Card = ({eleman}) => {
 
+    // const myHover = () =>{
+
+    // }
+
     console.log(eleman)
     const [style, setStyle] = useState("first-page");
     const [style2, setStyle2] = useState("second-page");
     const [cardStyle, setCardStyle] = useState("card")
+    // const [myHover, setHover] = useState("")
 
     const Change = (e) => {
       if (style === "first-page") {
@@ -36,7 +41,7 @@ const Card = ({eleman}) => {
 
   return (
     <div>
-      <div className={cardStyle} onClick={Change}>
+      <div className={cardStyle} onClick={Change} >
         <div className={style}>
           <img src={eleman.img} alt="" />
           <p>{eleman.name}</p>

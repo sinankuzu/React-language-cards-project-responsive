@@ -34,7 +34,12 @@ img {
   align-items: center;
   transform: rotateY(0deg);
 
-  transition: 1.7s;
+  transition:transform 1.7s, border 0s;
+
+}
+
+.card > img:hover{
+    background-color: red;
 }
 
 .card-flip {
@@ -50,6 +55,7 @@ img {
   transform: rotateY(360deg);
   transform-style: preserve-3d;
   transition: 1.7s;
+  transition:transform 1.7s, border 0s;
 }
 
 .first-page {
@@ -100,4 +106,18 @@ p {
   z-index: 2;
   transition: scale 1s, z-index 0s;
   transition-delay: 500ms;
+}
+
+.card:hover{
+    border: 3px solid rgb(70, 69, 69);
+      box-shadow: 1px 1px 10px 3px gray, -1px -1px 10px 3px gray;
+}
+
+.card-flip:hover{
+    border: 3px solid rgb(70, 69, 69);
+      box-shadow: 1px 1px 10px 3px gray, -1px -1px 10px 3px gray;
+}
+
+.card:hover ~ img{
+    width: 300px;
 }
