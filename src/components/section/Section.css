@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 .container {
   width: 600px;
   height: 800px;
   background-color: rgb(244, 139, 41);
   border-radius: 20px;
   margin-top: 30px;
+  font-family: "Patua One", cursive;
 }
 
 h1 {
@@ -18,7 +20,7 @@ h1 {
 }
 
 img {
-  width: 80px;
+  width: 70px;
   margin: 10px 0;
 }
 
@@ -34,12 +36,7 @@ img {
   align-items: center;
   transform: rotateY(0deg);
 
-  transition:transform 1.7s, border 0s;
-
-}
-
-.card > img:hover{
-    background-color: red;
+  transition: transform 1.7s, border 0s;
 }
 
 .card-flip {
@@ -55,18 +52,18 @@ img {
   transform: rotateY(360deg);
   transform-style: preserve-3d;
   transition: 1.7s;
-  transition:transform 1.7s, border 0s;
+  transition: transform 1.7s, border 0s;
 }
 
 .first-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: rgb(252, 236, 221);
+  width: 100%;
+  border-radius: 40px;
   scale: 1;
   z-index: 2;
   transition: scale 1s, z-index 0s;
   transition-delay: 500ms;
+  cursor: pointer;
 }
 
 p {
@@ -106,18 +103,37 @@ p {
   z-index: 2;
   transition: scale 1s, z-index 0s;
   transition-delay: 500ms;
+  cursor: pointer;
 }
 
-.card:hover{
-    border: 3px solid rgb(70, 69, 69);
-      box-shadow: 1px 1px 10px 3px gray, -1px -1px 10px 3px gray;
+.card:hover {
+  border: 3px solid rgb(70, 69, 69);
+  box-shadow: 1px 1px 10px 3px gray, -1px -1px 10px 3px gray;
 }
 
-.card-flip:hover{
-    border: 3px solid rgb(70, 69, 69);
-      box-shadow: 1px 1px 10px 3px gray, -1px -1px 10px 3px gray;
+.card-flip:hover {
+  border: 3px solid rgb(70, 69, 69);
+  box-shadow: 1px 1px 10px 3px gray, -1px -1px 10px 3px gray;
 }
 
-.card:hover ~ img{
-    width: 300px;
+.first-page:hover > img {
+  scale: 1.4;
+  transition: 1s;
+}
+
+@media (max-width: 630px) {
+  .container {
+    width: 400px;
+    height: 1500px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 415px) {
+    .container{
+        width: 300px;
+    }
 }
